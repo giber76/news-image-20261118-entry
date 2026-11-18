@@ -5,19 +5,20 @@
 # Wednesday 18 November 2026 — one front page
 
 A dense broadsheet that sums up Wednesday 18 November 2026's world news
-in one image: 30 stories, 6 continents, one front page — the winning genre
+in one image: 36 stories, 6 continents, one front page — the winning genre
 of the daily news-image contests.
 
-- **Masthead:** "Wednesday 18 November 2026" — 30 stories, 6 continents.
+- **Masthead:** "Wednesday 18 November 2026" — 36 stories, 6 continents.
 - **3 illustrated hero cards:** US–Iran fire over Bahrain; Ukraine collapses
   a span of the Crimea bridge; Trump in Manila for the first Quad in two years.
 - **8 illustrated medium cards:** Nvidia's $115.8bn quarter, Cyclone Akvan,
-  the Knesset electing Kahana, the EU's €45bn Ukraine loan, Britain's
-  settlement sanctions, China–Canada tariff relief, Dhoni's IPL retirement,
-  the US losing measles elimination status.
-- **Also on 18 November:** numbered list, stories 12–30.
-- **Where it happened:** a world map (Natural Earth 110m, public domain)
-  with numbered pins colour-coded by region, matching the stories above.
+  the Knesset electing Kahana, the EU's €45bn Ukraine loan, APEC opening in
+  Shenzhen, China–Canada tariff relief, the Dow's 849-point slide, the US
+  losing measles elimination status.
+- **By the numbers:** 66–52, $115.8bn, 145 km/h, 200,000, 1,441, 849.
+- **Also on 18 November:** numbered list, stories 12–36.
+- **Where it happened:** a dotted world map (Natural Earth 110m, public
+  domain) with numbered pins, matching the stories above.
 
 ## How it was made
 
