@@ -5,9 +5,10 @@ The entry image is the entry.png beside this file; the program copies it
 to /output/entry.png. The image itself was drawn by draw.py in this
 repository (Pillow, flat procedural art, no copied photograph): a dense
 broadsheet front page for Wednesday 18 November 2026 -- a navy masthead,
-3 illustrated hero cards, 8 illustrated medium cards, a BY THE NUMBERS
-strip, a dotted world map with numbered pins, and a two-column list of
-the rest of the day, 36 verified stories in all.
+a UTC timeline strip, 4 illustrated lead cards, 12 illustrated medium
+cards, a BY THE NUMBERS strip, a dotted world map with numbered pins and
+a region legend, a three-column list of the rest of the day, and an
+explicit DATE CHECK box, 50 verified stories in all.
 
 Run it with:  mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 """
