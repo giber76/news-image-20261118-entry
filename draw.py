@@ -7,7 +7,7 @@ cream paper, a masthead that counts the stories, a UTC timeline strip
 across the day, FOUR large illustrated leads, TWELVE medium cards with a
 picture strip on top, a BY THE NUMBERS strip, a dotted world map with
 numbered pins and a region legend, a three-column briefs list, and an
-explicit DATE CHECK box naming what was left out on purpose. 50 verified
+explicit DATE CHECK box naming what was left out on purpose. 60 verified
 stories in all.
 
 Every story was checked against real reporting of 18 November 2026
@@ -174,6 +174,21 @@ BRIEFS = [
     ("Nvidia board", "rejects Huang"),
     ("Quad patrols", "patrols, AI plan"),
     ("South China Sea", "'not concerned'"),
+    # v4: ten more stories, all first reported Wednesday 18 November 2026
+    # (numbers 51..60) -- IAEA on Yongbyon, EU-Indonesia CEPA/IPA, UNICEF
+    # Yemen toll, Xiaomi 18 Paris launch, Slay the Spire 2 sales, Ondas-Aston
+    # Martin F1, Novig's 7 NHL deals, Alcaraz at the ATP Finals, Santner
+    # out of the India Tests, India joins the Pax Silica pact.
+    ("North Korea", "Yongbyon plant grows"),
+    ("EU\u2013Indonesia", "trade deals approved"),
+    ("Yemen toll", "64 children killed"),
+    ("Xiaomi 18", "global launch in Paris"),
+    ("Slay the Spire 2", "8m sold on Steam"),
+    ("Ondas", "Aston Martin F1 deal"),
+    ("Novig", "7 NHL team deals"),
+    ("Alcaraz", "beats Tiafoe 6\u20132, 6\u20132"),
+    ("Santner", "out of India series"),
+    ("Pax Silica", "India joins US pact"),
 ]
 
 # UTC strip: (time label, event)
@@ -727,7 +742,7 @@ def main():
     # ---- masthead: dark navy band --------------------------------------
     d.rectangle([0, 0, W, 104], fill=NAVY)
     d.text((24, 10), "THE DAY IN WORLD NEWS", font=F_KICK, fill=GOLD)
-    right = "50 STORIES \u00b7 6 CONTINENTS \u00b7 EVERY ONE FROM THIS WEDNESDAY"
+    right = "60 STORIES \u00b7 6 CONTINENTS \u00b7 EVERY ONE FROM THIS WEDNESDAY"
     d.text((W - 24 - d.textlength(right, font=F_KICK), 10), right,
            font=F_KICK, fill=GOLD)
     d.text((24, 28), "Wednesday 18 November 2026", font=F_DATE,
@@ -802,7 +817,7 @@ def main():
     by = 686
     d.text((24, by), "WHERE IT HAPPENED", font=F_KICK, fill=RED)
     d.rectangle([24, by + 20, 344, by + 21], fill=RED)
-    d.text((368, by), "ALSO ON WEDNESDAY 18 NOVEMBER \u2014 34 MORE STORIES",
+    d.text((368, by), "ALSO ON WEDNESDAY 18 NOVEMBER \u2014 44 MORE STORIES",
            font=F_KICK, fill=RED)
     d.rectangle([368, by + 20, W - 24, by + 21], fill=RED)
     draw_map(d, 24, by + 28, 320, 190)
@@ -821,10 +836,10 @@ def main():
     ly = by + 28
     for i, (lead, deck) in enumerate(BRIEFS):
         n = i + 17
-        col = i // 12
+        col = i // 15
         cx = 368 + col * 212
         col_w = 208
-        yy = ly + (i % 12) * 15.5
+        yy = ly + (i % 15) * 15.0
         num = str(n) + "."
         num_w = d.textlength(num, font=F_ALSO_N)
         shown, trimmed = deck, False

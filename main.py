@@ -8,7 +8,7 @@ broadsheet front page for Wednesday 18 November 2026 -- a navy masthead,
 a UTC timeline strip, 4 illustrated lead cards, 12 illustrated medium
 cards, a BY THE NUMBERS strip, a dotted world map with numbered pins and
 a region legend, a three-column list of the rest of the day, and an
-explicit DATE CHECK box, 50 verified stories in all.
+explicit DATE CHECK box, 60 verified stories in all.
 
 Run it with:  mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 """
